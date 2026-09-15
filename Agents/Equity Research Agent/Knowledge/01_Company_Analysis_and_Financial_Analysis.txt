@@ -1,0 +1,217 @@
+EQUITY RESEARCH AGENT KNOWLEDGE
+01 — COMPANY ANALYSIS AND FINANCIAL ANALYSIS
+
+PURPOSE
+
+This document provides foundational guidance for analyzing a public company.
+
+The analysis should understand the company's business model, financial performance, financial position, industry, competitors, capital allocation, and economic drivers.
+
+1. COMPANY ANALYSIS WORKFLOW
+
+A professional company-analysis process should:
+
+* Understand the issuer's business model.
+* Analyze historical financial performance.
+* Analyze the company's financial position.
+* Analyze the industry and competitors.
+* Identify revenue and profitability drivers.
+* Assess working capital and cash generation.
+* Assess capital investment and capital structure.
+* Forecast future financial performance.
+* Perform valuation.
+* Identify investment risks and uncertainties.
+* Communicate conclusions using clear evidence and assumptions.
+
+2. BUSINESS MODEL
+
+Analyze:
+
+* Products and services.
+* Customers and customer concentration.
+* Revenue sources.
+* Geographic exposure.
+* Distribution channels.
+* Pricing model.
+* Cost structure.
+* Capital intensity.
+* Competitive advantages.
+* Capital allocation.
+
+3. REVENUE ANALYSIS
+
+Where appropriate, decompose revenue using operating drivers.
+
+Examples:
+
+Revenue = Volume × Price
+
+Revenue may also be analyzed by:
+
+* Product.
+* Segment.
+* Geography.
+* Customer.
+* Channel.
+* Subscription base.
+* Market share.
+
+Use company disclosures whenever possible.
+
+4. PRICING POWER
+
+Pricing power is the ability to increase prices without causing an unacceptable loss of demand.
+
+Assess:
+
+* Industry structure.
+* Competitive intensity.
+* Product differentiation.
+* Switching costs.
+* Brand strength.
+* Customer concentration.
+* Regulation.
+* Cost inflation.
+* Ability to pass costs to customers.
+
+5. COST AND PROFITABILITY ANALYSIS
+
+Analyze:
+
+* Gross profit.
+* Gross margin.
+* Operating income.
+* Operating margin.
+* Net income.
+* Net margin.
+* Fixed versus variable costs where information permits.
+* Operating leverage.
+* Financial leverage.
+* Working-capital management.
+
+Operating leverage describes the sensitivity of operating profit to changes in sales.
+
+Financial leverage describes the sensitivity of equity earnings to changes in operating performance and financing structure.
+
+6. FINANCIAL POSITION
+
+Review:
+
+* Cash and cash equivalents.
+* Debt.
+* Net debt.
+* Liquidity.
+* Working capital.
+* Shareholders' equity.
+* Capital expenditures.
+* Debt maturities.
+* Refinancing requirements.
+* Material contingent obligations.
+* Material off-balance-sheet arrangements where applicable.
+
+7. CASH FLOW
+
+Assess:
+
+* Operating cash flow.
+* Capital expenditure.
+* Free cash flow.
+* Working-capital effects.
+* Sustainability of cash generation.
+* Differences between accounting earnings and cash generation.
+
+Do not assume accounting earnings automatically equal economic cash generation.
+
+8. FINANCIAL RATIOS
+
+Useful categories include:
+
+* Liquidity ratios.
+* Profitability ratios.
+* Leverage and solvency ratios.
+* Activity and efficiency ratios.
+* Return ratios.
+* Valuation ratios.
+
+Ratios should be interpreted:
+
+* Across time.
+* Against appropriate peers.
+* Against industry economics.
+* In the context of the company's business model.
+* With attention to accounting differences.
+
+Never compare ratios mechanically when accounting policies or business models make the comparison misleading.
+
+9. EARNINGS QUALITY
+
+Investigate:
+
+* Nonrecurring items.
+* Unusual gains or losses.
+* Revenue-recognition issues.
+* Changes in accounting estimates.
+* Working-capital movements.
+* Stock-based compensation.
+* Acquisition effects.
+* Restructuring.
+* Margin changes.
+* Cash conversion.
+
+10. COMPETITIVE ANALYSIS
+
+Compare economically similar peers on:
+
+* Revenue growth.
+* Margins.
+* Profitability.
+* Cash generation.
+* Leverage.
+* Returns.
+* Valuation.
+* Market position.
+* Business-model characteristics.
+
+Peer selection must be economically justified.
+
+11. EVIDENCE DISCIPLINE
+
+Use these labels when appropriate:
+
+FACT
+Directly supported by a reliable source.
+
+CALCULATION
+Produced by a deterministic formula or calculation tool.
+
+ASSUMPTION
+An explicit analyst/model input.
+
+INTERPRETATION
+An analytical conclusion derived from evidence.
+
+OPINION
+A judgment that goes beyond directly observed facts.
+
+Never present an assumption as a fact.
+
+12. SOURCE PRIORITY
+
+Prefer:
+
+1. Regulatory and government sources.
+2. Audited financial statements.
+3. Official company disclosures.
+4. Official industry/regulatory sources.
+5. Reputable market-data providers.
+6. Reputable secondary research.
+
+Search-engine snippets are discovery aids, not evidence.
+
+VERIFIED SOURCES
+
+CFA Institute — Company Analysis: Past and Present
+https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/company-analysis-past-and-present
+
+CFA Institute — Financial Analysis Techniques
+https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/financial-analysis-techniques

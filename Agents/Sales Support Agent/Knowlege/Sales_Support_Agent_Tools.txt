@@ -1,0 +1,22 @@
+# Sales Support Agent — Tools
+
+## Purpose
+Support relationship managers with client knowledge, product knowledge, research, pitch preparation, CRM, and client communication.
+
+## Tools
+1. **CRM Tool** — retrieves approved client profiles, contacts, interactions, opportunities, and follow-ups.
+2. **Client Research Tool** — retrieves approved company information, business model, industry, geography, and strategic priorities.
+3. **Market Research Tool** — retrieves sector trends, market developments, comparable companies, and relevant transactions.
+4. **Company Financials Tool** — retrieves approved company financial information and trends.
+5. **Product Knowledge Tool** — retrieves approved information about M&A, ECM, DCM, corporate finance, lending, structured finance, and restructuring.
+6. **Deal Pipeline Tool** — retrieves active opportunities, stages, stakeholders, and next steps.
+7. **Pitch Builder Tool** — builds client-specific pitch structures from approved data.
+8. **Meeting Summary Tool** — summarizes previous meetings and identifies follow-up actions.
+9. **Email Drafting Tool** — drafts client communications from approved information.
+10. **CRM Update Tool** — records approved notes, follow-ups, and opportunity updates.
+
+## Typical Workflow
+CRM → Client Research → Market/Financial Research → Product Knowledge → Pitch Builder → Human Review
+
+## Escalation
+Require human review before external client communication, binding commitments, investment recommendations, or use of unverified client information.

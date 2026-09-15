@@ -1,0 +1,51 @@
+# Data source reference
+
+## Primary data source: SEC EDGAR (U.S. public company filings)
+
+SEC EDGAR's structured XBRL data is free, official, requires no API key,
+and needs only a compliant User-Agent header and rate-limit discipline.
+Base URL: `https://data.sec.gov/`
+
+Relevant endpoints:
+- `GET https://data.sec.gov/submissions/CIK{10-digit CIK}.json`
+  Company profile and list of recent filings.
+- `GET https://data.sec.gov/api/xbrl/companyfacts/CIK{10-digit CIK}.json`
+  Every XBRL-tagged financial fact ever reported by the company, across
+  all filings — the main source for building historical financials.
+- `GET https://data.sec.gov/api/xbrl/companyconcept/CIK{10-digit CIK}/us-gaap/{Tag}.json`
+  A single line item's full history (e.g. tag `Revenues`,
+  `NetIncomeLoss`, `Assets`, `StockholdersEquity`) — more efficient than
+  companyfacts when only one metric is needed.
+- Ticker-to-CIK lookup: `https://www.sec.gov/files/company_tickers.json`
+
+Notes for the agent:
+- Values are in raw units (e.g. a real revenue figure, not thousands or
+  millions) — do not apply an extra scaling factor.
+- Not all companies use identical XBRL tags for the same concept (e.g.
+  some report `Revenues`, others
+  `RevenueFromContractWithCustomerExcludingAssessedTax`). If the expected
+  tag returns no data, check the companyfacts response for the tag the
+  company actually used before concluding the data is unavailable.
+- XBRL structured data is reliably available from fiscal year 2009
+  onward (mandatory for large filers) and from 2011 for all filers.
+  Earlier periods exist only as unstructured filing documents.
+
+## Market data (price, market capitalization, shares outstanding)
+
+SEC EDGAR does not provide live market price data. A separate market data
+source (e.g. an internally licensed feed such as Bloomberg/Refinitiv/
+Capital IQ, or another approved market-data API) is required for:
+- Current share price and market capitalization (for EV and P/E)
+- Public peer identification (for comparable company analysis)
+
+The agent should not fabricate a share price or market cap — if no market
+data tool is connected, it must say so and request one before computing
+any market-based multiple.
+
+## M&A / precedent transaction data
+
+Precedent transaction screening (deal size, deal multiples, announcement
+dates) typically requires a licensed deal database (e.g. Capital IQ,
+Refinitiv, FactSet) — this is not publicly available through a free API.
+The agent should treat precedent transaction analysis as available only
+when such a tool is connected, and should say so explicitly otherwise.

@@ -1,0 +1,48 @@
+# Financial ratio reference
+
+Standard ratio formulas the agent uses when analyzing a company's
+financial statements, grouped by category. All inputs should be pulled
+from the company's actual reported financial statements (via SEC EDGAR),
+never estimated.
+
+## Liquidity ratios (short-term solvency)
+- Current ratio = Current assets / Current liabilities
+- Quick ratio (acid-test) = (Current assets - Inventory) / Current liabilities
+- Cash ratio = (Cash + Cash equivalents) / Current liabilities
+
+## Profitability ratios
+- Gross margin = Gross profit / Revenue
+- Operating margin = Operating income (EBIT) / Revenue
+- Net margin = Net income / Revenue
+- Return on assets (ROA) = Net income / Total assets
+- Return on equity (ROE) = Net income / Shareholders' equity
+- Return on invested capital (ROIC) = NOPAT / Invested capital, where
+  NOPAT = EBIT * (1 - effective tax rate)
+
+## Leverage / solvency ratios
+- Debt-to-equity = Total debt / Shareholders' equity
+- Debt-to-assets = Total debt / Total assets
+- Interest coverage = EBIT / Interest expense
+- Net debt / EBITDA = (Total debt - Cash and equivalents) / EBITDA
+
+## Efficiency / activity ratios
+- Asset turnover = Revenue / Total assets
+- Inventory turnover = Cost of goods sold / Average inventory
+- Receivables turnover = Revenue / Average accounts receivable
+- Days sales outstanding (DSO) = 365 / Receivables turnover
+
+## Valuation multiples (market-based ratios)
+- Price-to-earnings (P/E) = Share price / Earnings per share
+- EV/EBITDA = Enterprise value / EBITDA
+- EV/Revenue = Enterprise value / Revenue
+- Price-to-book (P/B) = Share price / Book value per share
+
+Where Enterprise value (EV) = Market capitalization + Total debt +
+Preferred equity + Minority interest - Cash and cash equivalents.
+
+## Presentation rule for the agent
+When reporting ratios, always show:
+1. The ratio value
+2. The fiscal period and source filing it was computed from
+3. The trend across the available historical periods (not a single
+   snapshot), so the human analyst can see direction, not just level

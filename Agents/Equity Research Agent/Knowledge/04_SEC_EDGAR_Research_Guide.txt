@@ -1,0 +1,207 @@
+EQUITY RESEARCH AGENT KNOWLEDGE
+04 — SEC EDGAR RESEARCH GUIDE
+
+PURPOSE
+LATEST DATA RULE
+
+Never assume a historical filing is the latest filing.
+
+Before starting analysis:
+
+1. Determine the current date.
+2. Identify the latest available SEC filing.
+3. Prefer the latest 10-K for annual analysis.
+4. Use the latest 10-Q for interim updates when applicable.
+5. Verify filing date.
+6. Report the fiscal period and filing date explicitly.
+
+If the latest filing cannot be retrieved:
+DO NOT claim that an older filing is the latest.
+State the limitation explicitly.
+
+
+
+
+SEC EDGAR is a primary source for researching U.S. public companies.
+
+1. EDGAR
+
+EDGAR is the SEC's Electronic Data Gathering, Analysis, and Retrieval system.
+
+It provides public access to corporate filings and disclosure information.
+
+2. RESEARCH FLOW
+
+Ticker
+→ Resolve SEC CIK
+→ Retrieve SEC data
+→ Identify relevant filing
+→ Verify reporting period
+→ Verify financial concept
+→ Analyze
+→ Calculate
+→ Cite source
+
+3. FORM 10-K
+
+The 10-K is the annual report.
+
+It provides important information including:
+
+* Annual financial statements.
+* Business information.
+* Risk factors.
+* Management's discussion and analysis.
+* Accounting information.
+* Other material disclosures.
+
+Use 10-K for:
+
+* Annual historical financials.
+* Business description.
+* Long-term risks.
+* Accounting disclosures.
+* Management discussion.
+* Capital structure information.
+
+4. FORM 10-Q
+
+The 10-Q is a quarterly report.
+
+Use it for:
+
+* Recent quarterly performance.
+* Updated financial position.
+* Recent cash flow.
+* Updated risks.
+* Changes since the annual report.
+
+5. FORM 8-K
+
+8-K reports provide information about certain material current events.
+
+Use relevant 8-K filings when researching:
+
+* Major corporate events.
+* Acquisitions.
+* Divestitures.
+* Executive changes.
+* Material agreements.
+* Other significant developments.
+
+6. DEF 14A
+
+Proxy statements may contain:
+
+* Executive compensation.
+* Governance information.
+* Beneficial ownership.
+* Shareholder matters.
+* Compensation disclosures.
+
+7. INSIDER FORMS
+
+Form 3:
+
+Initial beneficial-ownership statement.
+
+Form 4:
+
+Changes in beneficial ownership.
+
+Form 5:
+
+Annual beneficial-ownership statement where applicable.
+
+8. BENEFICIAL OWNERSHIP
+
+Schedule 13D and 13G can provide information about certain large beneficial owners.
+
+Use them when researching significant ownership positions.
+
+9. FOREIGN PRIVATE ISSUERS
+
+Foreign private issuers may use different SEC forms, including:
+
+* 20-F.
+* 6-K.
+* Other applicable F-series filings.
+
+Do not assume domestic U.S. filing patterns apply to every issuer.
+
+10. XBRL
+
+Structured XBRL data makes many financial facts machine-readable.
+
+However:
+
+* XBRL concepts are not automatically interchangeable across companies.
+* Verify taxonomy.
+* Verify tag/concept.
+* Verify period.
+* Verify units.
+* Verify context.
+* Verify filing date.
+* Verify filing form.
+* Check amendments where relevant.
+
+11. SOURCE PRIORITY
+
+For U.S. public-company facts:
+
+SEC filing
+
+>
+
+Official company disclosure
+
+>
+
+Reputable secondary source
+
+Search-engine snippets are discovery aids and should not be treated as evidence.
+
+12. TOOL USAGE
+
+Use:
+
+* get_company_cik
+* get_company_facts
+* get_company_concept
+
+Use get_company_cik when the SEC CIK is not known.
+
+13. SEC API DISCIPLINE
+
+SEC data access should:
+
+* Use an appropriate User-Agent.
+* Identify the application and a monitored contact.
+* Respect SEC rate limits.
+* Use reasonable request timeouts.
+* Handle HTTP errors.
+* Avoid unnecessary repeated requests.
+* Never fabricate missing information.
+
+14. DATA VALIDATION
+
+Before using a financial value:
+
+* Confirm fiscal period.
+* Confirm annual versus quarterly context.
+* Confirm units.
+* Confirm filing.
+* Confirm whether the number is reported or calculated.
+* Check whether the filing is amended.
+* Check whether the XBRL context matches the intended period.
+
+VERIFIED SOURCES
+
+SEC — About EDGAR
+https://www.sec.gov/submit-filings/about-edgar
+
+SEC — Using EDGAR to Research Investments
+https://www.sec.gov/search-filings/edgar-search-assistance/using-edgar-research-investments
+
+SEC — EDGAR Search Assistance
+https://www.sec.gov/search-filings/edgar-search-assistance

@@ -1,0 +1,90 @@
+# Execution algorithms reference
+
+Standard institutional execution strategies the agent must recognize and
+track. Sources: Perold (1988) on implementation shortfall (the original
+academic definition, still the industry reference), and standard
+sell-side execution-desk technical training material (used consistently
+across CFI, Street of Walls-style, and practitioner references).
+
+## 1. TWAP — Time-Weighted Average Price
+
+Splits a total order into equal-sized slices executed at even time
+intervals across a chosen window, regardless of market volume.
+
+```
+Slice size = Total order size / Number of intervals
+```
+
+- Simple and predictable, but ignores intraday volume patterns — it can
+  under-trade during high-liquidity periods and over-trade during thin
+  ones.
+- Benchmark for performance: the time-weighted average price over the
+  execution window.
+
+## 2. VWAP — Volume-Weighted Average Price
+
+Paces execution to match the market's actual volume distribution over
+the day, so the trader's own volume-weighted average price tracks the
+market's.
+
+```
+VWAP = sum(Price_i * Volume_i) / sum(Volume_i)
+```
+
+- Industry-standard benchmark for "did the desk trade at a fair average
+  price relative to the day."
+- Still a scheduled/passive strategy: it does not react to news or a
+  sudden price move mid-day, it simply continues pacing to volume.
+
+## 3. POV — Percentage of Volume (participation strategy)
+
+Targets a fixed percentage of real-time market volume rather than a
+fixed time schedule.
+
+```
+Target execution rate = Participation rate x Real-time market volume
+```
+
+- Adaptive: trades faster when the market is more active, slower when
+  it's quiet — this keeps the order's footprint proportional to actual
+  liquidity.
+- Trade-off: because it reacts to market volume, the total time to
+  complete the order is not fixed and depends on how much volume
+  actually occurs.
+
+## 4. Implementation shortfall (IS)
+
+Defined by Perold (1988) as the difference between the return on a
+theoretical "paper" portfolio (executed instantly at the decision price)
+and the actual portfolio as executed. It captures the full real-world
+cost of trading:
+
+```
+Implementation shortfall = Decision-price cost
+                          + Market impact cost
+                          + Timing/delay cost
+                          + Opportunity cost (unfilled portion)
+```
+
+- More aggressive than VWAP/TWAP by design: it explicitly balances the
+  risk of trading too fast (market impact) against the risk of trading
+  too slow (price drifting away — timing risk), rather than passively
+  following a schedule.
+- Used when a trader has higher conviction or urgency and is willing to
+  accept more market impact to reduce timing risk.
+
+## 5. What the agent tracks for each strategy type
+
+| Strategy | Agent must report                                          |
+|----------|-------------------------------------------------------------|
+| TWAP     | Actual vs. scheduled slice completion, time-weighted price variance |
+| VWAP     | Running VWAP vs. market VWAP, participation pace vs. market volume |
+| POV      | Actual participation rate vs. target rate, projected completion time |
+| IS       | Running cost vs. decision/arrival price, split into impact vs. timing cost where data allows |
+
+## Sources
+- Perold, A. (1988), "The Implementation Shortfall: Paper Versus
+  Reality," Journal of Portfolio Management (as summarized in academic
+  and practitioner secondary sources on implementation shortfall)
+- Standard execution-algorithm technical training material used across
+  the sell-side (VWAP/TWAP/POV/IS definitions and trade-offs)

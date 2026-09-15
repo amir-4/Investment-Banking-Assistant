@@ -1,0 +1,68 @@
+# Market access risk controls reference (SEC Rule 15c3-5)
+
+Source: SEC Rule 15c3-5 (17 CFR 240.15c3-5), the SEC's Small Entity
+Compliance Guide, and SEC staff FAQs on the rule. This governs any
+broker-dealer providing market access — including via automated/
+algorithmic systems — and directly shapes what this agent must never do.
+
+## 1. What the rule requires
+
+Broker-dealers with market access must establish, document, and maintain
+risk management controls and supervisory procedures reasonably designed
+to systematically limit financial exposure and ensure regulatory
+compliance. The rule applies to ALL orders — whether entered manually by
+a trader or generated automatically by a pre-programmed system. It
+effectively eliminated "unfiltered" or "naked" access to an exchange or
+ATS.
+
+## 2. The required pre-trade controls (the core of what this agent enforces)
+
+The risk management controls must be reasonably designed to:
+
+1. **Prevent orders that exceed pre-set credit or capital thresholds** —
+   this is the financial-exposure control most directly relevant to this
+   agent: a hard credit/capital limit that must never be silently
+   exceeded.
+2. **Prevent orders in securities a person is restricted from trading** —
+   a regulatory/compliance-list control.
+3. **Restrict access to trading systems and technology to pre-approved,
+   authorized persons and accounts.**
+4. **Assure appropriate surveillance personnel receive immediate
+   post-trade execution reports** — meaning breaches and executions must
+   be surfaced promptly, not batched or delayed.
+
+## 3. Governance requirements around the controls
+
+- The controls must be under the **direct and exclusive control** of the
+  broker-dealer itself (with narrow, defined exceptions) — they cannot
+  be outsourced to a customer or another party without meeting specific
+  conditions.
+- Controls must be reviewed regularly for effectiveness, with a
+  documented annual business-activity review.
+- The firm's CEO (or equivalent) must annually certify that the controls
+  comply with the rule.
+- The rule applies to quotes as well as orders — an automated
+  quoting/market-making system must also be controlled to prevent
+  inadvertent excessive quoting.
+
+## 4. What this means operationally for trading_monitor_agent
+
+- Any pre-set credit, capital, or position threshold the agent is told
+  about is treated as hard and non-negotiable — the agent flags a
+  breach or near-breach immediately rather than waiting for a batch
+  report, consistent with the rule's "immediate" surveillance
+  requirement.
+- The agent never treats itself as authorized to loosen, override, or
+  reinterpret a threshold — that authority sits with the humans
+  responsible for the firm's risk controls (per the "direct and
+  exclusive control" requirement).
+- The agent should treat a restricted-list / trading-restriction flag on
+  a security the same way: report it, do not attempt to route around it
+  or assume it no longer applies.
+
+## Sources
+- 17 CFR 240.15c3-5 (Cornell Legal Information Institute text of the
+  rule)
+- SEC, "Rule 15c3-5 — Risk Management Controls for Brokers or Dealers
+  with Market Access: A Small Entity Compliance Guide" (sec.gov)
+- SEC Division of Trading and Markets, FAQs on Rule 15c3-5 (sec.gov)

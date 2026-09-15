@@ -1,0 +1,225 @@
+EQUITY RESEARCH AGENT KNOWLEDGE
+02 — FORECASTING AND SCENARIO ANALYSIS
+
+PURPOSE
+
+Forecasting is a core equity-research activity used to evaluate future company performance and support valuation.
+
+1. FORECASTING PRINCIPLES
+
+A forecast should:
+
+* Have a defined forecast horizon.
+* Identify the economic and operating drivers.
+* Use historical evidence where relevant.
+* Incorporate current company disclosures.
+* Incorporate relevant industry information.
+* State assumptions explicitly.
+* Be internally consistent.
+* Preserve uncertainty when evidence is weak.
+
+2. FORECAST OBJECTS
+
+Potential forecast objects include:
+
+* Revenue.
+* Operating expenses.
+* Margins.
+* Working capital.
+* Capital expenditure.
+* Depreciation.
+* Debt.
+* Cash.
+* Free cash flow.
+* Other company-specific financial drivers.
+
+Select forecast variables based on:
+
+* Information availability.
+* Relevance.
+* Accuracy.
+* Explanatory value.
+* Verifiability.
+
+3. TOP-DOWN FORECASTING
+
+A top-down approach can move through:
+
+Macroeconomy → Industry → Company → Financial Statements
+
+Potential inputs include:
+
+* GDP growth.
+* Interest rates.
+* Inflation.
+* Commodity prices.
+* Industry growth.
+* Market size.
+* Market share.
+* Regulatory changes.
+
+4. BOTTOM-UP FORECASTING
+
+A bottom-up approach begins with company-level operating drivers.
+
+Examples:
+
+Revenue = Units Sold × Average Price
+
+Other examples:
+
+* Customers × Revenue per Customer.
+* Subscribers × ARPU.
+* Stores × Sales per Store.
+* Transactions × Revenue per Transaction.
+
+5. REVENUE FORECASTING
+
+Consider:
+
+* Volume.
+* Price.
+* Product mix.
+* Geographic mix.
+* Customer growth.
+* Market share.
+* Foreign-exchange effects.
+* Acquisitions.
+* Divestitures.
+* Management guidance.
+
+6. OPERATING EXPENSE FORECASTING
+
+Consider:
+
+* Historical margins.
+* Fixed versus variable costs.
+* Management guidance.
+* Headcount.
+* Capacity.
+* Input costs.
+* Operating leverage.
+* One-time costs.
+
+7. WORKING CAPITAL
+
+Consider:
+
+* Accounts receivable.
+* Inventory.
+* Accounts payable.
+* Revenue growth.
+* Cost growth.
+* Historical turnover.
+* Days metrics.
+* Industry norms.
+
+8. CAPITAL INVESTMENT
+
+Forecast:
+
+* Maintenance CapEx.
+* Growth CapEx.
+* Expansion requirements.
+* Capacity additions.
+* Technology investment.
+* Depreciation where appropriate.
+
+Do not assume capital expenditure requirements are economically identical across companies.
+
+9. CAPITAL STRUCTURE
+
+Consider:
+
+* Debt levels.
+* Debt maturities.
+* Refinancing requirements.
+* Cash balances.
+* Share repurchases.
+* Equity issuance.
+* Acquisition financing.
+* Capital-allocation policy.
+
+10. SCENARIO ANALYSIS
+
+When uncertainty is material, create:
+
+BEAR CASE
+
+BASE CASE
+
+BULL CASE
+
+Each scenario should specify:
+
+* Key assumptions.
+* Main operating drivers.
+* Expected financial outcomes.
+* Valuation implications.
+* Major risks.
+
+11. SENSITIVITY ANALYSIS
+
+Sensitivity analysis measures how changes in assumptions affect an output.
+
+Common DCF sensitivities include:
+
+* WACC.
+* Terminal growth.
+* Revenue growth.
+* Operating margin.
+* EBITDA margin.
+* Capital expenditure.
+* Working capital.
+
+Common relative-valuation sensitivities include:
+
+* Peer selection.
+* Median versus mean multiple.
+* Target-company growth.
+* Margin differences.
+* Business-model differences.
+
+12. FORECAST DISCIPLINE
+
+Never present a forecast as a fact.
+
+Use explicit terminology such as:
+
+"Historical fact..."
+
+"Management guidance indicates..."
+
+"Analyst estimate..."
+
+"Base-case assumption..."
+
+"Bear-case assumption..."
+
+"Bull-case assumption..."
+
+13. CONFLICTING INFORMATION
+
+If company guidance, historical data, or external estimates conflict:
+
+* Identify the disagreement.
+* Compare source quality.
+* Compare dates.
+* Compare reporting periods.
+* Explain the selected assumption.
+* Preserve uncertainty if it cannot be resolved.
+
+14. ESCALATION
+
+Escalate when:
+
+* Material information is missing.
+* Sources materially conflict.
+* Forecasts depend on unsupported assumptions.
+* Potential material non-public information is involved.
+* The requested forecast requires regulated investment advice.
+
+VERIFIED SOURCE
+
+CFA Institute — Company Analysis: Forecasting
+https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/company-analysis-forecasting

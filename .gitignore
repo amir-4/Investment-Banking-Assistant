@@ -1,0 +1,15 @@
+﻿.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+*.log
+secrets/
+credentials/
+ISYS Final Project.mp4

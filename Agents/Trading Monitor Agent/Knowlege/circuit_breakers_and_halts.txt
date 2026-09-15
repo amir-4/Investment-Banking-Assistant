@@ -1,0 +1,58 @@
+# Circuit breakers and trading halts reference
+
+Source: Investor.gov (SEC's investor-education site), SEC white papers
+on the LULD Plan, and NYSE/Nasdaq rule references (NYSE Rule 7.12,
+Nasdaq Rule 4121). Two distinct mechanisms exist and must not be
+conflated.
+
+## 1. Market-wide circuit breakers (MWCB) — "is the whole market falling apart?"
+
+Triggered by the S&P 500 index alone, and halt trading across every US
+equity and equity-options exchange simultaneously. Three fixed
+thresholds, calculated daily from the prior day's S&P 500 close:
+
+| Level | Decline | Effect |
+|-------|---------|--------|
+| Level 1 | 7% | Halts market-wide trading for 15 minutes if triggered before 3:25pm ET; no halt if triggered at/after 3:25pm ET |
+| Level 2 | 13% | Same as Level 1 |
+| Level 3 | 20% | Halts market-wide trading for the remainder of the trading day, regardless of time triggered |
+
+## 2. Limit Up-Limit Down (LULD) — "is this one stock printing prints that don't make sense?"
+
+A single-security mechanism that prevents a stock from trading outside a
+dynamic price band around a rolling reference price.
+
+- Applies during regular trading hours, 9:30am-4:00pm ET.
+- Price bands: 5% for Tier 1 NMS stocks (S&P 500, Russell 1000, and
+  select ETPs) priced above $3; wider bands (up to 10-20%) for Tier 2
+  and lower-priced securities; bands double during the last 25 minutes
+  of the regular session for Tier 1 stocks and low-priced Tier 2 stocks.
+- If price would move outside the band, the security enters a **Limit
+  State**. If trading does not naturally return inside the band within
+  15 seconds, a **5-minute trading pause** follows.
+- LULD was made permanent by SEC approval in April 2019 and effectively
+  replaced the earlier single-stock circuit breaker pilot.
+
+## 3. What the agent must do when either mechanism triggers
+
+- **Report, don't predict.** State plainly that a symbol has entered a
+  Limit State, Straddle State, or trading pause, or that a market-wide
+  breaker level has been hit. Do not guess when trading will resume or
+  what price it will reopen at.
+- **Flag order eligibility, not order fate.** During a halt, in-flight
+  orders on the affected symbol(s) may not be eligible to execute —
+  state this as a fact about eligibility, not as advice on what the
+  trader should do next.
+- **Distinguish the two mechanisms clearly** in any report: a single
+  stock can be in an LULD pause while the broader market is nowhere near
+  a market-wide breaker, and vice versa — never describe an LULD event
+  as if it were a market-wide halt or imply market-wide risk from a
+  single-name pause.
+
+## Sources
+- Investor.gov (U.S. SEC), "Stock Market Circuit Breakers"
+- SEC Division of Economic and Risk Analysis, "'Limit Up-Limit Down'
+  Pilot Plan and Associated Events" white paper (2017)
+- NYSE Rule 7.12 and Nasdaq Rule 4121 (market-wide circuit breaker
+  levels, as referenced in current secondary market-structure
+  explainers)

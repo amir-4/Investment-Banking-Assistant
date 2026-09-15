@@ -1,0 +1,20 @@
+# Risk Management Agent — Tools
+
+## Purpose
+Identify, measure, monitor, and escalate market, credit, liquidity, and operational risk.
+
+## Tools
+1. **Market Data Tool** — retrieves prices, FX rates, interest rates, spreads, volatility, and volumes.
+2. **Portfolio Exposure Tool** — retrieves positions, market values, exposures, and concentrations.
+3. **Risk Calculator** — calculates VaR, Expected Shortfall, sensitivities, and exposure metrics.
+4. **Credit Data Tool** — retrieves counterparty/borrower ratings, exposure, collateral, and credit information.
+5. **Limit Checker** — compares exposure against approved risk limits.
+6. **Stress Testing Tool** — runs approved market, credit, and liquidity scenarios.
+7. **Risk Alert Tool** — creates and escalates alerts when thresholds or limits are breached.
+8. **Risk Reporting Tool** — generates structured risk summaries and reports.
+
+## Typical Workflow
+Market/Exposure Data → Risk Calculator → Limit Checker → Risk Alert → Risk Report
+
+## Escalation
+Escalate material limit breaches, missing critical data, conflicting sources, and high-impact decisions.

@@ -1,0 +1,224 @@
+EQUITY RESEARCH AGENT KNOWLEDGE
+03 — EQUITY VALUATION FRAMEWORKS
+
+PURPOSE
+
+This document defines professional valuation concepts and methodology for equity research.
+
+1. VALUATION PROCESS
+
+Use the following sequence:
+
+1. Understand the business.
+2. Understand the company's economic drivers.
+3. Forecast company performance.
+4. Select an appropriate valuation model.
+5. Calculate valuation.
+6. Perform sensitivity/scenario analysis where material.
+7. Interpret the results.
+8. Communicate limitations.
+
+The appropriate valuation model depends on:
+
+* Company characteristics.
+* Business model.
+* Data availability.
+* Forecastability.
+* Capital structure.
+* Valuation purpose.
+
+2. INTRINSIC VALUATION
+
+Intrinsic valuation estimates value from the economic characteristics of the asset.
+
+Important approaches include:
+
+* Discounted cash flow.
+* Free cash flow to the firm.
+* Free cash flow to equity.
+* Dividend discount models.
+* Residual income.
+
+3. DCF / FCFF
+
+A simplified FCFF DCF process is:
+
+1. Forecast FCFF.
+2. Discount forecast FCFF using WACC.
+3. Estimate terminal value.
+4. Discount terminal value.
+5. Calculate enterprise/firm value.
+6. Bridge enterprise value to equity value using appropriate balance-sheet adjustments.
+
+Perpetuity-growth terminal value:
+
+Terminal Value = FCFF(n+1) / (WACC - g)
+
+Where:
+
+FCFF(n+1) = FCFF in the first terminal-period year.
+
+WACC = Weighted Average Cost of Capital.
+
+g = Long-term terminal growth rate.
+
+Important:
+
+* WACC must be greater than terminal growth for this formula.
+* Terminal growth must be economically defensible.
+* Terminal assumptions should be consistent with long-term economic conditions.
+* DCF valuation is highly sensitive to assumptions.
+* Sensitivity analysis should be used when assumptions are material.
+
+4. WACC
+
+For a simplified debt/equity structure:
+
+WACC = We × Re + Wd × Rd × (1 - Tax Rate)
+
+Where:
+
+We = Market-value weight of equity.
+
+Wd = Market-value weight of debt.
+
+Re = Cost of equity.
+
+Rd = Pre-tax cost of debt.
+
+Tax Rate = Applicable tax rate.
+
+If preferred equity is material, incorporate its market-value weight and required return.
+
+Never invent:
+
+* Market value of equity.
+* Market value of debt.
+* Cost of equity.
+* Cost of debt.
+* Tax rate.
+
+Inputs must be sourced or explicitly modeled.
+
+5. FCFE
+
+FCFE estimates cash flow available to common equity holders after considering required investment and debt-related cash flows.
+
+Use when an equity-cash-flow approach is appropriate for the company's characteristics and capital structure.
+
+6. DIVIDEND DISCOUNT MODEL
+
+DDM values equity based on expected future dividends.
+
+It can be appropriate when:
+
+* Dividends are meaningful.
+* Dividend policy is relatively stable.
+* Dividends reasonably represent distributable cash flows.
+
+Do not use DDM mechanically when dividends do not represent the company's economic cash-flow capacity.
+
+7. RELATIVE VALUATION
+
+Common price multiples:
+
+* P/E.
+* P/B.
+* P/S.
+* Price/Operating Cash Flow.
+
+Common enterprise-value multiples:
+
+* EV/EBITDA.
+* EV/Sales.
+* Other operating multiples when economically appropriate.
+
+8. COMPARABLE COMPANY ANALYSIS
+
+Peer analysis should:
+
+* Select economically comparable companies.
+* Use consistent reporting periods.
+* Normalize definitions where appropriate.
+* Consider growth.
+* Consider margins.
+* Consider risk.
+* Consider capital intensity.
+* Consider capital structure.
+* Consider business-model differences.
+
+Use median and distribution information rather than relying only on the mean.
+
+9. MULTIPLE SELECTION
+
+Do not select a valuation multiple only because it produces a favorable valuation.
+
+Explain why the selected multiple is appropriate.
+
+10. MULTI-METHOD VALUATION
+
+Use multiple valuation methods when appropriate.
+
+Potential methods:
+
+* DCF.
+* Trading comparables.
+* Dividend discount.
+* Residual income.
+* Other company-specific approaches.
+
+Differences between methods are information and should be explained.
+
+11. SENSITIVITY ANALYSIS
+
+For DCF consider:
+
+* WACC.
+* Terminal growth.
+* Revenue growth.
+* Margins.
+* CapEx.
+* Working capital.
+
+For comparable valuation consider:
+
+* Peer selection.
+* Median versus mean.
+* Metric definition.
+* Target-company differences.
+
+12. VALUATION BOUNDARY
+
+A valuation is an estimate.
+
+It is NOT:
+
+* A guaranteed future market price.
+* A guaranteed return.
+* A guaranteed investment outcome.
+
+Never communicate valuation certainty when the underlying assumptions are uncertain.
+
+13. TOOL USAGE
+
+Use deterministic tools for mathematical calculations:
+
+* calculate_wacc
+* calculate_dcf
+* calculate_comparable_multiples
+
+Do not manually invent calculator outputs.
+
+VERIFIED SOURCES
+
+CFA Institute — Equity Valuation: Applications and Processes
+https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/equity-valuation-applications-and-processes
+
+CFA Institute — Equity Valuation: Concepts and Basic Tools
+https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/equity-valuation-concepts-basic-tools
+
+CFA Institute — Free Cash Flow Valuation
+https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/free-cash-flow-valuation
+
+CFA Institute — Market-Based Valuation: Price and Enterprise Value Multiples
+https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/market-based-valuation-price-and-enterprise-value-multiples

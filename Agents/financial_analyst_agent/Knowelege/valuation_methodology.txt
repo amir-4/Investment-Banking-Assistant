@@ -1,0 +1,144 @@
+# Valuation methodology reference
+
+This document grounds the agent's valuation logic. Sources: CFA Institute
+curriculum (Free Cash Flow Valuation, Weighted Average Cost of Capital),
+Corporate Finance Institute, Street of Walls, and standard investment-banking
+technical training material. Where a formula appears, it is the standard
+textbook form — the agent should not deviate from it without an explicit
+user-supplied override.
+
+## 1. The three core valuation methods
+
+Investment banks triangulate a company's value using three approaches used
+together, not in isolation:
+
+1. **Discounted cash flow (DCF)** — an intrinsic/absolute valuation: the
+   value of the firm is the present value of its expected future cash
+   flows.
+2. **Comparable company analysis (CCA / "trading comps")** — a relative
+   valuation: value derived from how the market currently prices similar
+   public companies.
+3. **Precedent transaction analysis ("deal comps")** — a relative
+   valuation: value derived from what acquirers have actually paid for
+   similar companies in past M&A deals, which embeds a control premium.
+
+No single method is authoritative. The agent must present outputs from
+each requested method separately and let the human analyst weigh them.
+
+## 2. Discounted cash flow (DCF)
+
+### 2.1 Core logic
+The value of the firm equals the present value of its future free cash
+flow to the firm (FCFF), discounted at the weighted average cost of
+capital (WACC):
+
+```
+Firm value = sum over t of [ FCFF_t / (1 + WACC)^t ]
+```
+
+For a stable, constant long-run growth rate g (Gordon growth / perpetuity
+approach) applied to the terminal year:
+
+```
+Terminal value = FCFF_(n+1) / (WACC - g)
+```
+
+Equity value is then:
+
+```
+Equity value = Firm value - Market value of net debt
+```
+
+### 2.2 Required inputs the agent must obtain or flag
+- Historical revenue, EBIT, D&A, capex, and net working capital change
+  (from SEC EDGAR filings) to build the FCFF projection base.
+- A projection period (typically 5 years unless the user specifies
+  otherwise) and per-period growth/margin assumptions.
+- A terminal growth rate (g) — must be explicitly stated, and should not
+  exceed a reasonable long-run economic growth rate.
+- WACC (see section 3).
+
+### 2.3 Known limitations to flag to the user
+- Terminal value assumptions can represent a very large share of total
+  DCF value, so the agent must show the terminal value as a separate
+  line, not buried in the total.
+- Two analysts using the same data will legitimately reach different DCF
+  values because of differing assumptions — the agent should never
+  present a DCF output as a single "correct" number.
+
+## 3. Weighted average cost of capital (WACC)
+
+WACC blends the cost of each source of capital, weighted by market value:
+
+```
+WACC = (E / V) * Re + (D / V) * Rd * (1 - Tax rate) + (P / V) * Rp
+```
+
+Where:
+- `E` = market value of equity, `D` = market value of debt,
+  `P` = market value of preferred stock, `V = E + D + P`
+- `Re` = cost of equity (commonly via CAPM)
+- `Rd` = pre-tax cost of debt
+- `Rp` = cost of preferred stock
+- The `(1 - Tax rate)` term applies only to the debt component, because
+  interest expense is tax-deductible while equity/preferred returns are
+  paid after tax.
+
+The agent must never silently assume a tax rate or cost of debt — these
+should come from the company's actual filings (effective tax rate) or be
+explicitly supplied/approved by the user.
+
+## 4. Comparable company analysis (CCA)
+
+### 4.1 Process
+1. Define a peer set: companies in the same industry, of broadly similar
+   size, growth profile, and geography. The agent proposes a peer set
+   for user approval rather than finalizing one unilaterally.
+2. Pull each peer's key multiples, most commonly:
+   - EV/EBITDA
+   - EV/Revenue
+   - P/E (price to earnings)
+3. Apply the peer set's median or mean multiple to the target company's
+   corresponding metric to derive an implied valuation range.
+
+### 4.2 Caveats to flag
+- Multiples are a proxy for an underlying DCF and can mislead in
+  isolation — e.g. a low P/E is not automatically "cheap" if the company
+  carries a large net debt position.
+- Peer comparability quality matters more than peer set size.
+
+## 5. Precedent transaction analysis ("deal comps")
+
+### 5.1 Process
+1. Screen recent M&A transactions in the same industry, similar target
+   size, and (ideally) similar market conditions/timing.
+2. Focus on the **target** company's financials at time of deal, not the
+   acquirer's.
+3. Compute transaction multiples (EV/EBITDA, EV/Revenue) based on the
+   deal price.
+4. Optionally compute the premium paid relative to the target's
+   unaffected share price (one week / one month prior to announcement).
+
+### 5.2 Caveats to flag
+- Precedent transaction multiples typically run higher than trading
+  comps because they embed a control premium and expected synergies.
+- Deals struck in very different market/rate environments may not be
+  comparable — flag the date range used.
+- This method is most useful when trading comps are scarce (e.g. the
+  target is private or the industry has few public peers).
+
+## 6. What the agent must never do
+- Never average or blend DCF, comps, and precedent-transaction outputs
+  into one number without explicit user instruction.
+- Never state a final "fair value" or investment recommendation — this
+  is a human analyst / research-agent decision.
+- Never fabricate a peer set, discount rate, or growth assumption; always
+  surface it as an assumption requiring approval.
+
+## Sources
+- CFA Institute, "Free Cash Flow Valuation" and "Weighted Average Cost of
+  Capital" curriculum readings (cfainstitute.org)
+- Corporate Finance Institute, "Precedent Transaction Analysis" and "WACC
+  Formula" guides (corporatefinanceinstitute.com)
+- Street of Walls, "Precedent Transaction Analysis" technical training
+  notes (streetofwalls.com)

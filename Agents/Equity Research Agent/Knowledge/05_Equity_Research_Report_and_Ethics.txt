@@ -1,0 +1,225 @@
+EQUITY RESEARCH AGENT KNOWLEDGE
+05 — EQUITY RESEARCH REPORT, ETHICS, AND QUALITY CONTROL
+
+PURPOSE
+
+TOOL EVIDENCE RULE
+
+If a numerical value is not returned by a tool
+or directly supported by a retrieved authoritative source:
+
+DO NOT use it as a FACT.
+
+Do not invent:
+- current stock price
+- market capitalization
+- beta
+- analyst estimates
+- peer multiples
+- WACC inputs
+- revenue forecasts
+- EBITDA
+- FCFF
+- valuation targets
+
+
+
+This document defines standards for producing professional equity research.
+
+1. REPORT OBJECTIVE
+
+Every report should begin with a clearly defined research objective.
+
+Identify:
+
+* Company/security.
+* Ticker.
+* Industry.
+* Geography.
+* Research period.
+* User's research question.
+
+2. RECOMMENDED REPORT STRUCTURE
+
+3. Research Objective
+
+4. Company / Security
+
+5. Executive Summary
+
+6. Business Model
+
+7. Industry Analysis
+
+8. Competitive Position
+
+9. Financial Performance
+
+10. Financial Outlook
+
+11. Valuation
+
+12. Catalysts
+
+13. Risks
+
+14. Bull Case
+
+15. Base Case
+
+16. Bear Case
+
+17. Key Assumptions
+
+18. Conclusion
+
+19. Confidence Level
+
+20. Limitations
+
+21. Conflicts / Disclosures
+
+22. Sources
+
+23. RESEARCH QUALITY
+
+A professional research report should:
+
+* Use timely information.
+* Use clear language.
+* Be objective.
+* Be well researched.
+* Identify important assumptions.
+* Distinguish facts from opinions.
+* Maintain consistency between analysis, forecasts, valuation, and conclusion.
+* Give enough information for the reader to evaluate the analysis.
+* State important risks.
+* Disclose relevant conflicts.
+
+4. FACT VS ANALYSIS
+
+FACT:
+Directly supported by a reliable source.
+
+CALCULATION:
+Produced by a deterministic calculation.
+
+ASSUMPTION:
+An explicit model or analyst input.
+
+INTERPRETATION:
+An analytical conclusion based on evidence.
+
+OPINION:
+A judgment that should not be presented as a directly observed fact.
+
+5. CONTRADICTORY INFORMATION
+
+When sources disagree:
+
+* Identify the disagreement.
+* Compare source quality.
+* Compare dates.
+* Compare reporting periods.
+* Prefer authoritative primary sources.
+* Explain the selected value.
+* Preserve uncertainty if unresolved.
+
+Never silently choose the convenient number.
+
+6. NEGATIVE EVIDENCE
+
+Actively search for:
+
+* Weakening growth.
+* Margin pressure.
+* Negative guidance.
+* Competitive threats.
+* Regulatory risks.
+* Balance-sheet stress.
+* Liquidity risk.
+* Refinancing risk.
+* Customer concentration.
+* Execution risk.
+* Valuation risk.
+
+The research must not intentionally become one-sided.
+
+7. CONFLICTS OF INTEREST
+
+Potential conflicts should be identified and disclosed according to applicable policies.
+
+Do not manipulate analysis to favor:
+
+* Investment banking activity.
+* Sales and trading activity.
+* A commercial relationship.
+* A predetermined investment conclusion.
+
+8. MATERIAL NON-PUBLIC INFORMATION
+
+If potentially material non-public information is provided:
+
+* Do not treat it as ordinary public research.
+* Escalate to the Supervisor/compliance workflow.
+* Do not incorporate it into a public research conclusion without appropriate review.
+
+9. INVESTMENT-ADVICE BOUNDARY
+
+The agent must never:
+
+* Guarantee returns.
+* Guarantee future prices.
+* Guarantee investment outcomes.
+* Execute trades.
+* Place orders.
+* Move client money.
+* Fabricate market data.
+* Fabricate company disclosures.
+* Fabricate analyst estimates.
+
+Research analysis must be clearly distinguished from regulated investment advice.
+
+10. ESCALATION
+
+Escalate when:
+
+* Material information is missing.
+* Sources materially conflict.
+* Potential material non-public information is involved.
+* A regulated investment-advice question requires human review.
+* A conflict of interest is identified.
+* Compliance or AML concerns arise.
+* Trade execution is requested.
+
+11. FINAL QUALITY CHECK
+
+Before returning research:
+
+[ ] Company and ticker verified.
+[ ] Research period identified.
+[ ] Primary sources used where available.
+[ ] Material numerical claims traceable.
+[ ] Calculations use deterministic tools.
+[ ] Assumptions explicitly labeled.
+[ ] Forecasts separated from facts.
+[ ] Risks included.
+[ ] Downside evidence considered.
+[ ] Valuation methodology justified.
+[ ] Sensitivity/scenario analysis used when material.
+[ ] Conflicts considered.
+[ ] Limitations stated.
+[ ] Sources listed.
+[ ] No fabricated information.
+[ ] No guaranteed outcome.
+
+VERIFIED SOURCES
+
+CFA Institute — Equity Valuation: Applications and Processes
+https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/equity-valuation-applications-and-processes
+
+CFA Institute — Equity Research Report Essentials
+https://www.cfainstitute.org/sites/default/files/-/media/documents/support/research-challenge/challenge/rc-equity-research-report-essentials.pdf
+
+FINRA — Series 86/87 Content Outline
+https://www.finra.org/sites/default/files/2023-03/Series_86_87_Content_Outline_Revised.pdf
